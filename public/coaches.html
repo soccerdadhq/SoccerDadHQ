@@ -1,0 +1,20 @@
+<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><title>Coach Directory</title><link rel='stylesheet' href='styles.css'/></head>
+<body data-page='coaches'>
+<header><nav class='nav'><a href='index.html'>SoccerDadHQ</a><a href='clubs.html'>Club Directory</a><a href='submit-coach.html'>Submit Coach</a></nav></header>
+<main class='grid'>
+<section>
+  <div class='card'><h2>Coach Directory</h2>
+    <form id='coach-filters'>
+      <label>Coach name<input name='name'/></label>
+      <label>Club<input name='club'/></label>
+      <div class='row'><label>City<input name='city'/></label><label>State<select name='state'></select></label></div>
+      <div class='row'><label>Gender<select name='gender'><option value=''>Any</option><option>Boys</option><option>Girls</option><option>Coed</option></select></label><label>League<select name='league'></select></label></div>
+      <label>Age Group<select name='age'></select></label>
+    </form>
+  </div>
+  <div id='coach-list'></div>
+</section>
+<aside id='coach-ads'></aside>
+</main>
+<script src='../data/seed.js'></script><script src='app.js'></script>
+</body></html>

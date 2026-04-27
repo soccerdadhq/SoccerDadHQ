@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><title>Club Directory</title><link rel='stylesheet' href='styles.css'/></head>
+<body data-page='clubs'>
+<header><nav class='nav'><a href='index.html'>SoccerDadHQ</a><a href='coaches.html'>Coach Directory</a><a href='submit-club.html'>Submit Club</a></nav></header>
+<main class='grid'>
+<section>
+  <div class='card'><h2>Club Directory</h2>
+    <form id='club-filters'>
+      <label>Club name<input name='q'/></label>
+      <div class='row'><label>City<input name='city'/></label><label>State<select name='state'></select></label></div>
+      <div class='row'><label>ZIP / Radius placeholder<input name='zip' placeholder='ZIP'/></label><label>Gender<select name='gender'><option value=''>Any</option><option>Boys</option><option>Girls</option><option>Coed</option></select></label></div>
+      <div class='row'><label>League<select name='league'></select></label><label>Age Group<select name='age'></select></label></div>
+    </form>
+  </div>
+  <div id='club-list'></div>
+</section>
+<aside id='club-ads'></aside>
+</main>
+<script src='../data/seed.js'></script><script src='app.js'></script>
+</body></html>

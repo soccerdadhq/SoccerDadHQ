@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><title>Submit Club</title><link rel='stylesheet' href='styles.css'/></head>
+<body data-page='submit-club'>
+<header><nav class='nav'><a href='index.html'>SoccerDadHQ</a><a href='clubs.html'>Club Directory</a></nav></header>
+<main><div class='card'><h2>Submit a Club</h2><p class='muted'>New submissions are saved as pending review.</p>
+<form id='submit-club-form'>
+<label>Club name<input name='clubName' required/></label><div class='row'><label>City<input name='city' required/></label><label>State<select name='state'></select></label></div>
+<label>ZIP<input name='zip' required/></label><label>Website<input name='website'/></label><label>Contact email<input name='contactEmail' type='email'/></label>
+<label>Leagues (multi-select with Ctrl/Cmd)<select name='leagues' multiple size='5'><option>ECNL</option><option>ECNL RL</option><option>GA</option><option>DPL</option><option>MLS NEXT</option><option>NAL</option><option>NPL</option><option>USYS</option><option>EDP</option><option>Local/Other</option></select></label>
+<label>Gender programs<select name='genders' multiple size='3'><option>Boys</option><option>Girls</option><option>Coed</option></select></label>
+<label>Age groups<select name='ages' multiple size='6'><option>U8</option><option>U9</option><option>U10</option><option>U11</option><option>U12</option><option>U13</option><option>U14</option><option>U15</option><option>U16</option><option>U17</option><option>U18</option><option>U19</option></select></label>
+<label>Notes<textarea name='notes'></textarea></label>
+<button type='submit'>Submit Club</button>
+</form></div></main>
+<script src='../data/seed.js'></script><script src='app.js'></script>
+</body></html>
